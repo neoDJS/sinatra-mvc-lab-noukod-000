@@ -5,3 +5,4 @@ class PigLatinizer
     end.join(": ")
   end
 end
+# "#{w[/[aeiouy][a-zA-Z]*/]}#{w[/[bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ]*/]}ay"
