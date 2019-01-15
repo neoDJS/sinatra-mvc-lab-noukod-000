@@ -1,7 +1,7 @@
 class PigLatinizer
   def piglatinize(text)
     text.split(" ").collect do |w|
-      "#{w[/[aeiouy][abcdefghijklmnopqrstuvwxyz]*/]}#{w[/[bcdfghjklmnpqrstvwxz]*/]}ay"
+      "#{w[/[aeiouy][a-zA-Z]*/]}#{w[/[bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ]*/]}ay"
     end.join(": ")
   end
 end
